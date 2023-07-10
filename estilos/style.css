@@ -20,7 +20,6 @@
 }
 
 body {
-    width: 500px;
     height: 100vh;
     padding: 0px 16px;
     background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E5 100%);
@@ -50,10 +49,14 @@ header, .section1, .section2, footer {
     padding: 25px;
 }
 
-.button-header {
-    display: block;
-    margin: auto;
+.button-header-pai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
+}
+
+.button-header {
     width: 200px;
     height: 48px;
     border: 2px solid black;
@@ -61,4 +64,53 @@ header, .section1, .section2, footer {
     box-shadow: 4px 4px 0px black;
     font-size: 20px;
     cursor: pointer;
+}
+
+.section1 {
+    padding-right: 0px;
+    padding-bottom: 16rem;
+}
+
+.imagem-principal {
+    display: block;
+    margin: 20px 0px 0px auto;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 3rem;
+    line-height: 120%;
+    margin: 20px 0px;
+}
+
+.cor-titulo {
+    display: block;
+    color: #EC4D1B;
+}
+
+.section1 p {
+    padding-right: 15px;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+.button-section1 {
+    position: relative;
+    width: 200px;
+    height: 48px;
+    border: 2px solid black;
+    background-color: #EC4D1B;
+    box-shadow: 4px 4px 0px black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button-section1::after {
+    content: '';
+    background: url(../imagens/arrow-curve.svg);
+    position: absolute;
+    top: 5rem;
+    right: -4rem;
+    height: 48px;
+    width: 132px;
 }
