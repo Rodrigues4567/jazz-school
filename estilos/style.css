@@ -128,3 +128,65 @@ header, .section1, .section2, footer {
     height: 48px;
     width: 132px;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+}
+
+.caixa {
+    background-color: var(--cor-primaria);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px black;
+}
+
+.caixa:nth-child(2n) {
+    align-self: end;
+    background-color: var(--cor-secundaria);
+}
+
+.caixa h2 {
+    font-size: 1.6rem;
+    margin: 1rem 0px;
+}
+
+.caixa a {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 3rem;
+}
+
+.fim-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 5rem 0px;
+}
+
+.fim-container h1 {
+    font-size: 2.4rem;
+}
+
+.fim-container h1 .cor-titulo2 {
+    color: var(--cor-primaria);
+}
+
+.botao-fim-container {
+    width: 220px;
+    height: 48px;
+    margin-top: 1rem;
+    border: 2px solid black;
+    background-color: #EC4D1B;
+    box-shadow: 4px 4px 0px black;
+    font-size: 20px;
+    cursor: pointer;
+}
