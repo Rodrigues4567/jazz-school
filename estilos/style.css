@@ -25,6 +25,11 @@ body {
     background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E5 100%);
 }
 
+header, .section1, .section2, footer {
+    border: 1px solid black;
+    padding: 25px;
+}
+
 header .logo {
     display: block;
     margin: auto;
@@ -46,11 +51,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-header, .section1, .section2, footer {
-    border: 1px solid black;
-    padding: 25px;
 }
 
 .button-header-pai {
