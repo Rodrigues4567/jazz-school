@@ -198,38 +198,40 @@ footer {
 }
 
 footer img {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 footer p {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 footer nav {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+footer nav a {
+    display: block;
+    margin-bottom: 1rem;
 }
 
 footer h2 {
-    font-size: 1.6rem;
+    margin-bottom: 10px;
 }
 
 footer input {
     display: block;
-    margin: 1rem 0px;
-    width: 272px;
-    height: 48px;
+    width: 255px;
+    padding: 10px;
+    font-size: 1rem;
     border: 2px solid black;
     box-shadow: 4px 4px 0px black;
-    font-size: 1rem;
-    padding-left: 5px;
 }
 
 footer button {
     width: 225px;
     height: 48px;
+    margin-top: 1rem;
     border: 2px solid black;
     background-color: #EC4D1B;
     box-shadow: 4px 4px 0px black;
@@ -237,7 +239,7 @@ footer button {
     cursor: pointer;
 }
 
-/********************** MEDIA QUERIES *************************/
+/********************** MEDIA QUERIES ****************************/
 
 @media screen and (min-width: 620px) {
 
@@ -289,6 +291,49 @@ footer button {
     header #header-mq {
         margin: auto;
         max-width: 1200px;
+    }
+
+    footer {
+        padding-top: 2rem;
+    }
+
+    .footer-mq {
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .desc-footer {
+        flex: 2;
+    }
+
+    footer nav {
+        flex: 1;
+    }
+
+    footer form {
+        flex: 2;
+    }
+
+    footer p {
+        max-width: 310px;
+    }
+
+    form input {
+        width: 310px;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    
+    .titulo {
+        font-size: 3.5rem;
+    }
+
+    .fim-container h1 {
+        font-size: 2.8rem;
     }
 
 }
